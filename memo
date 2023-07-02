@@ -1,0 +1,54 @@
+//============
+//共同開発の手順
+//============
+
+git init
+
+なにかしらのファイルを作成
+
+git add .
+
+git commit -m "first commit"
+
+git remote add origin URL
+
+git push origin main
+
+git checkout -b feature-local
+//ローカルブランチを作成
+
+git add .
+
+git commit -m "feature-localでの変更"
+
+git push origin feature-local
+
+
+
+
+
+//==========================
+// リモートブランチに反映させる
+//==========================
+
+リモートブランチfeatureを作成
+
+git fetch origin 
+//リモートブランチのfeatureから最近の情報を取得（ローカルには影響なし）
+
+git checkout featurue
+
+git merge feature-local
+//featureにfeature-localの変更を取り込む
+
+git push origin feature
+
+
+
+//================
+//mainに反映させる
+//================
+
+git fetch origin
+
+git checkout main
