@@ -74,4 +74,6 @@ git checkout feature
 
 git merge origin/main
 
-//please move or remove them before you merge.というエラーはmemoというファイルにfeatureとは異なる
+//please move or remove them before you merge.というエラーはmemoというファイルにfeatureで追跡されていない(git add されていない)ことが原因となる。
+//→git add .で追跡されるようにする or re or moveをする
+
