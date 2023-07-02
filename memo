@@ -45,11 +45,8 @@ git push origin feature
 
 
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> origin/main
 //================
 //mainに反映させる
 //================
@@ -57,7 +54,6 @@ git push origin feature
 git fetch origin
 
 git checkout main
-<<<<<<< HEAD
 
 git pull origin main
 
@@ -73,5 +69,9 @@ git push origin main
 //================
 
 git fetch origin
-=======
->>>>>>> origin/main
+
+git checkout feature
+
+git merge origin/main
+
+//please move or remove them before you merge.というエラーはmemoというファイルにfeatureとは異なる
