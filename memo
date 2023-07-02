@@ -45,8 +45,11 @@ git push origin feature
 
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> origin/main
 //================
 //mainに反映させる
 //================
@@ -54,6 +57,7 @@ git push origin feature
 git fetch origin
 
 git checkout main
+<<<<<<< HEAD
 
 git pull origin main
 
@@ -69,3 +73,5 @@ git push origin main
 //================
 
 git fetch origin
+=======
+>>>>>>> origin/main
